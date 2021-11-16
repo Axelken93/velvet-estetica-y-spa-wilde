@@ -1,0 +1,122 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/*Portada*/
+.portada {
+    background-image: url(../rsc/img/velvet-texture.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+    height: 90vh;
+    min-height: 20rem;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    @media (max-width: 768px) {
+        min-height: 15rem;
+    }
+    @media (max-width: 350px) {
+        height: 45vh;
+        min-width: none;
+    }
+}
+.titulo {
+    display: block;
+    color: $color-texto-on-p;
+    @include fuente('Lato', sans-serif, 900, 3.5rem);
+    margin-bottom: 2.5rem;
+    transition: all 1s ease-out;
+    &:hover {
+        color: $color-s-light;
+        transform: translateX(1.5rem);
+    }
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 2rem;
+    }
+}
+/**Conocenos**/
+.portada-conocenos {
+    background-image: url(../rsc/img/skincare.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+    height: 60vh;
+    background-size: cover;
+    @media (max-width: 768px) {
+
+    }
+    @media (max-width: 350px) {
+        height: 40vh;
+    }
+}
+.titulo-conocenos {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    color: #2C0724;
+    @media (max-width: 350px) {
+        margin-top: 0.5rem;
+        padding-top: 0.3rem;
+    }
+}
+.contenedor-conocenos {
+    @include medidas-display(flex, flex-start);
+    align-items: center;
+}
+.datos-contacto {
+    color: $color-texto-on-s;
+    @include fuente('Roboto', sans-serif, 600, 1.5rem);
+    margin: 1rem;
+    text-decoration: none;
+    padding-left: 40px;
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+        margin: 0.8rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.8rem;
+        margin: 0.4rem;
+        padding-left: 10px;
+    }
+}
+
+/**Nosotros**/
+.contenedor-nosotros {
+    @include medidas-display(flex, space-between);
+    align-items: center;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.img-nosotros {
+    width: 48%;
+    border-radius: 0.9rem;
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+    @media (max-width: 350px) {
+        width: 99%;
+    }
+}
+.parrafo-nosotros {
+    width: 48%;
+    @include fuente('Roboto', sans-serif, 300, 1.2rem);
+    color: $color-p-dark;
+    line-height: 1.8rem;
+    margin: 2rem;
+    @media (max-width: 768px) {
+        width: 95%;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 0.9rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        margin: 0.4rem;
+    }
+}
+

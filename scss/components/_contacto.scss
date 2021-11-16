@@ -1,0 +1,143 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/*Seccion Contacto*/
+.dflex-contacto {
+    @include medidas-display(flex, space-evenly)
+}
+.contenedor-contacto {
+    margin-top: 2rem;
+    @media (max-width: 768px) {
+        margin-top: 1rem;
+    }
+    @media (max-width: 350px) {
+        margin-top: 0.7rem;
+    }
+}
+.img-ubicacion2 {
+    width: 25rem;
+    height: 17rem;
+    margin: 2rem;
+    @media (max-width: 768px) {
+        display: none;
+    }
+    @media (max-width: 350px) {
+        display: none;
+    }
+}
+.informacion-contacto {
+    width: 75%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: $color-s-dark groove 2px;
+    border-radius: 3%;
+    @media (max-width: 768px) {
+        width: 95%;
+        padding: 0.9rem;
+    }
+    @media (max-width: 350px) {
+        width: 98%;
+        padding: 0.6rem;
+    }
+}
+.informacion-personal {
+    width: 75%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: $color-s-dark groove 2px;
+    border-radius: 3%;
+    @media (max-width: 768px) {
+        width: 95%;
+        padding: 0.9rem;
+    }
+    @media (max-width: 350px) {
+        width: 98%;
+        padding: 0.6rem;
+    }
+}
+legend {
+    @include fuente('Lato', sans-serif, 900, 1.5rem);
+    color: $color-s-dark;
+    @media (max-width: 768px) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 1rem;
+    }
+}
+form p {
+    @include fuente('Lato', sans-serif, 500, 1.2rem);
+    color: #615f5f;
+    margin-top: 1.2rem;
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.7rem;
+        margin-top: 0.7rem;
+    }
+}
+label {
+    @include fuente('Lato', sans-serif, 700, 1.4rem);
+    color: $color-s;
+    text-transform: uppercase;
+    display: block;
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+    }
+}
+
+input:not([type="submit"]), textarea, select {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f5edf5;
+    color: $color-p-dark;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    @media (max-width: 768px) {
+        padding: 0.9rem;
+        margin-bottom: 0.9rem;
+    }
+    @media (max-width: 350px) {
+        padding: 0.4rem;
+        margin-bottom: 0.4rem;
+    }
+}
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+    color: $color-p-dark;
+    font-family: 'Roboto', sans-serif;
+}
+select {
+    -webkit-appearence: none
+}
+textarea {
+    height: 20rem;
+    @media (max-width: 768px) {
+        height: 20rem;
+    }
+    @media (max-width: 350px) {
+        height: 12rem;
+    }
+}
+.forma-contacto {
+    @include medidas-display(flex, space-between);
+    width: 30rem;
+    align-items: center;
+    @media (max-width: 768px) {
+        width: 20rem;
+    }
+    @media (max-width: 350px) {
+        width: 12rem;
+    }
+}

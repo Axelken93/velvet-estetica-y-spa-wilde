@@ -1,0 +1,9 @@
+@mixin medidas-display($display, $justify-content) {
+    display: $display;
+    justify-content: $justify-content;
+}
+@mixin fuente($f-family1, $f-family2, $f-weight, $f-size) {
+    font-family: ($f-family1, $f-family2);
+    font-weight: $f-weight;
+    font-size: $f-size;
+}

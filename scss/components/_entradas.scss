@@ -1,0 +1,47 @@
+.parrafo-entrada {
+    @include fuente('Roboto', sans-serif, 300, 1.2rem);
+    color: $color-p-dark;
+    line-height: 1.8rem;
+    margin: 0.5rem 1.2rem 2rem 1.2rem;
+    padding: 0.8rem;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 0.9rem auto;
+        padding: 0.5rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        margin: 0.4rem;
+        padding: 0.2rem;
+    }
+    @media (max-width: 768px) {
+
+    }
+}
+.datos-reserva {
+    color: $color-p-dark;
+    @include fuente('Roboto', sans-serif, 600, 1.4rem);
+    text-decoration: none;
+    margin: 0.8rem;
+    padding-left: 40px;
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+        margin: 0.8rem;
+        padding-left: 0;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.7rem;
+        margin: 0.4rem;
+    }
+}
+.columna-entrada {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}

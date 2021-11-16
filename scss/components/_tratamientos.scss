@@ -1,0 +1,74 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/**Seccion Tratamientos**/
+.dflex-tratamientos {
+    @include medidas-display(flex, center);
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem auto;
+    @media (max-width: 350px) {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+.contenedor-tratamientos {
+    width: 32%;
+    background-color: $color-s-light;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid $color-s;
+    @media (max-width: 768px) {
+        width: 95%;
+        margin-bottom: 1rem;
+        max-width: 30rem;
+    }
+    @media (max-width: 350px) {
+        margin: 0.3rem;
+    }
+}
+.nombre-tratamiento {
+    color: $color-s-dark;
+    @include fuente('Lato', sans-serif, 600, 2rem);
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem;
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 1.1rem;
+        margin: 0.5rem;
+    }
+}
+.img-tratamiento {
+    height: 25rem;
+    width: 95%;
+    border-radius: 0.8rem;
+    margin: 2.5%;
+    @media (max-width: 768px) {
+        max-width: 30rem;
+    }
+    @media (max-width: 350px) {
+        height: 10rem;
+    }
+}
+.contenido-tratamiento{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(75, 58, 75);
+    margin: 0.2rem;
+    margin-bottom: 0.8rem;
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.7rem;
+        margin: 0.1rem;
+        padding: 0.2rem;
+        margin-bottom: 0.4rem;
+    }
+}
+a {
+    text-decoration: none;
+}

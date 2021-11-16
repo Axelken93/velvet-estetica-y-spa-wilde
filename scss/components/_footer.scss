@@ -1,0 +1,31 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/*Footer*/
+.portada-footer {
+    background-color: $color-s-light;
+    margin-top: 2rem;
+}
+.lista-footer {
+    @include medidas-display(flex, center);
+    align-items: center;
+    .lista-item-footer {
+        @include fuente('Lato', sans-serif, 500, 1rem);
+        color: $color-p-dark;
+        text-decoration: none;
+        padding: 1rem;
+        &:hover {
+            color: $color-s-dark;
+            cursor: pointer;
+            transform: scale(1.3);
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 0.8rem;
+            padding: 0.6rem;
+        }
+        @media screen and (max-width: 350px) {
+            font-size: 0.5rem;
+            padding: 0.2rem;
+        }
+    }
+}

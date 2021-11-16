@@ -1,0 +1,75 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/* Seccion Promociones */
+.contenedor-promociones {
+    width: 32%;
+    background-color: $color-p-light;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    @media (max-width: 768px) {
+        width: 95%;
+        margin-bottom: 1rem;
+        max-width: 30rem;
+    }
+    @media (max-width: 350px) {
+        margin: 0.3rem;
+    }
+}
+.titulo-promocion {
+    @include fuente('Lato', sans-serif, 600, 2.5rem);
+    color: $color-p-dark;
+    text-align: center;
+    margin: 1rem;
+    padding-top: 1rem;
+    @media (max-width: 768px) {
+        font-size: 1.7rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 1.3rem;
+        margin: 0.7rem;
+    }
+}
+.precio {
+    @include fuente('Lato', sans-serif, 900, 1.3rem);
+    color: $color-p-dark;
+    margin: 0.8rem 1rem 0rem 1rem;
+    text-align: center;
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.9rem;
+        margin: 0.5rem auto;
+    }
+}
+.parrafo-promocion{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: $color-texto-on-p;
+    margin: 0.8rem;
+    margin-bottom: 1rem;
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.7rem;
+        margin: 0.1rem;
+        padding: 0.2rem;
+        margin-bottom: 0.4rem;
+    }
+}
+.nombre-promocion {
+    @include fuente('Lato', sans-serif, 600, 2rem);
+    color: $color-p-dark;
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem;
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 1.1rem;
+        margin: 0.5rem;
+    }
+}

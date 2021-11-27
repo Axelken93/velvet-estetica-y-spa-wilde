@@ -810,9 +810,10 @@ textarea {
 
 .contenido-tratamiento {
   font-family: "Roboto", sans-serif;
-  color: #4b3a4b;
+  color: #a54d6de8;
   margin: 0.2rem;
   margin-bottom: 0.8rem;
+  padding: 0 0.8rem;
 }
 @media (max-width: 768px) {
   .contenido-tratamiento {

@@ -1,11 +1,19 @@
 {
-  "name": "clase-11y12",
+  "name": "tp-v4.0",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Axel Balbi Bieco",
   "license": "ISC",
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axelken93/velvet-estetica-y-spa-wilde.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Axelken93/velvet-estetica-y-spa-wilde/issues"
+  },
+  "homepage": "https://github.com/Axelken93/velvet-estetica-y-spa-wilde#readme",
+  "description": "cuarta entrega del proyecto final"
 }

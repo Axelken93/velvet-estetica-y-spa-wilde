@@ -5,6 +5,8 @@
 .dflex-contacto {
     @include medidas-display(flex, space-evenly)
 }
+/*Aclaracion de Nesting (4ta entrega)-> No se incluye la clase .contenedor-contacto en .dflex-contacto
+ porque luego se reutiliza en varias partes del proyecto*/
 .contenedor-contacto {
     margin-top: 2rem;
     @media (max-width: 768px) {
@@ -65,17 +67,19 @@ legend {
         font-size: 1rem;
     }
 }
-form p {
-    @include fuente('Lato', sans-serif, 500, 1.2rem);
-    color: #615f5f;
-    margin-top: 1.2rem;
-    @media (max-width: 768px) {
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
-    @media (max-width: 350px) {
-        font-size: 0.7rem;
-        margin-top: 0.7rem;
+form {
+    p {
+        @include fuente('Lato', sans-serif, 500, 1.2rem);
+        color: #615f5f;
+        margin-top: 1.2rem;
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 350px) {
+            font-size: 0.7rem;
+            margin-top: 0.7rem;
+        }
     }
 }
 label {

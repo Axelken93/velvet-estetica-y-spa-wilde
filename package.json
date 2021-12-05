@@ -1,6 +1,6 @@
 {
-  "name": "tp-4",
-  "version": "1.0.0",
+  "name": "velvet-estetica-y-spa",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Axelken93/velvet-estetica-y-spa-wilde/issues"
   },
-  "homepage": "https://github.com/Axelken93/velvet-estetica-y-spa-wilde#readme"
+  "homepage": "https://github.com/Axelken93/velvet-estetica-y-spa-wilde#readme",
+  "keywords": [
+    "velvet",
+    "estetica",
+    "spa"
+  ]
 }
